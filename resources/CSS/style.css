@@ -127,6 +127,21 @@ h2:after {
     color: #fff;
 }
 
+/*-----------HEADINGS-------------*/
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: rgba(0, 0, 0, 0.708);
+    border-bottom: 1px solid transparent;
+}
+
 /***************************************HEADER**************************************/
 
 header {
@@ -181,7 +196,7 @@ header {
 /************************************FEATURES************************************/
 
 .section-features .long-copy {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /***************************************MEALS**************************************/
@@ -219,4 +234,89 @@ header {
 .meals-showcase img:hover {
     transform: scale(1.03);
     opacity: 1;
+}
+
+/*************************************STEPS************************************/
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+    /* text-align works for all inline elements, not just text */
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/************************************CITIES**********************************/
+.section-cities img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.section-cities ion-icon {
+    color: #e67e22;
+    font-size: 120%;
+    /* aligning icons, lower: */
+    margin-bottom: -4px;
+    margin-right: 10px;
 }
