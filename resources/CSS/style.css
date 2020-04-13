@@ -9,7 +9,7 @@
 
 html {
     color: rgba(0, 0, 0, 0.708);
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -91,6 +91,13 @@ h2:after {
     margin-bottom: 10px;
 }
 
+.icon-small {
+    color: #e67e22;
+    font-size: 120%;
+    /* aligning icons, lower: */
+    margin-bottom: -4px;
+    margin-right: 10px;
+}
 
 /*-----------BUTTONS-------------*/
 .btn:link,
@@ -145,10 +152,12 @@ a:active {
 /***************************************HEADER**************************************/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.701)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.701)),
+        url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -193,13 +202,13 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-/************************************FEATURES************************************/
+/************************************FEATURES****************************************/
 
 .section-features .long-copy {
     margin-bottom: 30px;
 }
 
-/***************************************MEALS**************************************/
+/***************************************MEALS******************************************/
 
 .section-meals {
     padding: 0;
@@ -236,7 +245,7 @@ header {
     opacity: 1;
 }
 
-/*************************************STEPS************************************/
+/*************************************STEPS*******************************************/
 
 .section-steps {
     background-color: #f4f4f4;
@@ -287,11 +296,11 @@ header {
 .btn-app img {
     height: 50px;
     width: auto;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .clearfix {
-    zoom: 1
+    zoom: 1;
 }
 
 .clearfix:after {
@@ -302,7 +311,7 @@ header {
     visibility: hidden;
 }
 
-/************************************CITIES**********************************/
+/************************************CITIES***************************************/
 .section-cities img {
     width: 100%;
     height: auto;
@@ -313,10 +322,99 @@ header {
     margin-bottom: 5px;
 }
 
-.section-cities ion-icon {
-    color: #e67e22;
-    font-size: 120%;
-    /* aligning icons, lower: */
-    margin-bottom: -4px;
-    margin-right: 10px;
+/************************************TESTIMONIALS**********************************/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.701)),
+        url(/resources/CSS/img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
 }
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    /* html glyph: */
+    content: "\201c";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/************************************MEAL PLANS***************************************/
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    /* rounded corners: */
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #ede9e9;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.plan-box div:first-child {
+    background-color: #fafafa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+/************************************CONTACT FORM*************************************/
