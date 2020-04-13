@@ -101,7 +101,8 @@ h2:after {
 
 /*-----------BUTTONS-------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -113,7 +114,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     margin-right: 15px;
 }
@@ -124,7 +126,9 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
     border: 1px solid #cf6d17;
 }
@@ -388,7 +392,7 @@ cite img {
 }
 
 .plan-box div:first-child {
-    background-color: #fafafa;
+    background-color: #fefefe;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -418,3 +422,98 @@ cite img {
 }
 
 /************************************CONTACT FORM*************************************/
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px;
+}
+
+/* remove blue border when clicking on form field */
+*:focus {
+    outline: none
+}
+
+/************************************CONTACT FORM*************************************/
+footer {
+    background-color: rgb(55, 55, 55);
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child .social-links li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: none;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd
+}
+
+footer p {
+    text-align: center;
+    color: #888;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+footer ion-icon {
+    transition: color 0.2s;
+}
+
+.icon-fb:hover,
+.icon-fb:active {
+    color: #3b5998;
+}
+
+.icon-tw:hover,
+.icon-tw:active {
+    color: #55acee;
+}
+
+.icon-ig:hover,
+.icon-ig:active {
+    color: #e4405f;
+}
