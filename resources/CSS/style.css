@@ -7,12 +7,14 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     color: rgba(0, 0, 0, 0.708);
     font-family: "Lato", "Arial", sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /**************************REUSABLE COMPONENTS**************************************/
@@ -162,6 +164,7 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
 
 .hero-text-box {
