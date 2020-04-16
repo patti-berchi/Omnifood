@@ -27,6 +27,10 @@
         margin-left: 10%;
     }
 
+    .steps-box {
+        margin-top: 10px;
+    }
+
     .steps-box:first-child {
         margin-top: 10px;
         padding-right: 5%;
@@ -76,9 +80,6 @@
         width: 80%;
     }
 }
-
-
-/* fix footer !!!!!!!*/
 
 
 /* larger smartphones/small tablets from 481 to 767px */
